@@ -24,19 +24,12 @@ import Login from './components/pages/login';
 import ResetPassword from './components/pages/auth/reset-password';
 import ProtectedRoute from './components/utils/protected-route';
 import Help from './components/pages/Help';
-// import Sidebar from './components/sidebar/sidebar';
 import {getFromLocalStorage, setLocalStorage} from "./components/utils/local-storage";
 import TeamDetail from "./components/pages/team-detail";
+import About from "./components/pages/about";
+import Header from "./components/header/header";
+import Footer from "./components/footer/index.js";
 
-// import Services from "./components/pages/services";
-// import ServiceDetail from "./components/pages/services/service-detail";
-// import SuppliersIndex from "./components/pages/suppliers";
-// import SupplierDetails from "./components/pages/suppliers/supplier-details";
-// import QuotationsIndex from "./components/pages/quotations";
-// import AdminIndex from "./components/pages/admins";
-// import AdminDetails from "./components/pages/admins/admin-details";
-// import MemoIndex from "./components/pages/memos";
-// import MemoDetail from "./components/pages/memos/memo-detail";
 
 const Logout = () => {
     let navigate = useNavigate();
@@ -58,11 +51,16 @@ const App = () => {
 
     const [state, ] = useContext(Context);
     const isAuthenticated = getFromLocalStorage("user");
-    return ( 
+    return (
+                <>
+                
                 <div className="flex flex-row min-h-screen bg-white">
+               
 
                 <div className="main flex flex-col flex-grow -ml-64 md:ml-0 transition-all duration-150 ease-in min-h-screen">
                     <div className="relative">
+                        <Header />
+                        
                         <Routes>
                         <Route exact path="/" element={<Index/>}/>
                         <Route exact path="/login" element={<Login/>}/>
@@ -70,12 +68,9 @@ const App = () => {
                         <Route exact path="/logout" element={<Logout/>}/>
                         {/* <Route exact path="/print-report" element={<PrintReport/>}/> */}
                         <Route exact path="/help" element={<Help/>}/>
+                        <Route exact path="/about" element={<About/>}/>
 
-                        {/* mockup to delete */}
                         
-                        <Route exact path="/" element={<Index user={state?.user}/>} />
-                        <Route exact path="/team-details/:team" element={<TeamDetail user={state?.user}/>} />
-
                         {/* end delete */}
 
                         <Route element={<ProtectedRoute /> }>
@@ -86,9 +81,15 @@ const App = () => {
                         
                         <Route path="*" element={<Index/>}/>
                         </Routes>
+
+                        <Footer />
                     </div>
+                    
                 </div>
+                
               </div>
+              
+              </>
     )
 }
 
