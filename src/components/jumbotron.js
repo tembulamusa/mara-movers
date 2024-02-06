@@ -1,18 +1,20 @@
 import React from "react";
-import CardHolder from '../assets/svg/card-holder.svg';
+// import IndexCarousel from "./carousels";
 
 const Jumbotron = (props) => {
 
     return (
         <>
-            <section id='' className=" bg-red-600 text-white pt-7">
-                <div className='container mt-7 pt-7 flex flex-row'>
-                    <div className='w-50 pt-4'>
-                        <div className='text-5xl py-3 font-bold'>Kenya’s Premier <br/>Sports Experience <br/>Website</div>
-                        <div className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et rhoncus purus, eget pretium lacus. Phasellus semper turpis est, tincidunt volutpat augue porttitor sit amet.</div>
-                    </div>
-                    <div id='image-section' className='w-50'>
-                        <img src={CardHolder} />
+            <section id='jumbotron' className=" bg-red-600 text-white text-center">
+                <div className="w-full bg-transluscent py-3">
+                    <div className='container py-7'>
+                        <div className='w-full py-6 inline-block'>
+                            <div className='text-5xl py-3 font-bold leading-none'>Kenya’s Number 1 <br/>Movers <br/>Website</div>
+                            <div className='py-2'>
+                                We offer exlussive services with regards to moving including:<br/>House Moving, Office, Corporate
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>

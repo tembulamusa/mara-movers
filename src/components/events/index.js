@@ -6,32 +6,13 @@ import EmptyRecordsDiv from "../utils/empty-records-div";
 import makeRequest from "../utils/fetch-request";
 import IsLoadingHtml from "../utils/loading.js";
 import { Context } from "../../context/store.js";
-const Games = [
-    {
-        home_team: "nzoia",
-        away_team: "bournemouth",
-        date: "20-1-2024",
-        scores: [0, 0]
-    },
-    {
-        home_team: "shabana",
-        away_team: "tusker",
-        date: "20-1-2024",
-        scores: [0, 0]
-    },
-    {
-        home_team: "nzoia",
-        away_team: "nairobi",
-        date: "22-1-2024",
-        scores: [0, 0]
-    },
-    {
-        home_team: "ulinzi",
-        away_team: "bournemouth",
-        date: "23-1-2024",
-        scores: [0, 0]
-    }
-]
+import WhyUs from '../../assets/img/services/team2.jpg';
+import { BiWorld } from "react-icons/bi";
+import { FaUsers, FaRegLightbulb, FaHandshake } from "react-icons/fa";
+
+
+
+
 const Events = (props) => {
     const [key, setKey] = useState("latest_events");
     const [fetchedGames, setFetchedGames] = useState([]);
@@ -63,60 +44,83 @@ const Events = (props) => {
         dispatch({type: "SET", key: "showbuyticketmodal", payload: true});
     }
 
-    const EventsHtml = (props) => {
-
-        return (
-                <ul className="capitalize font-lighter">
-
-                    {isFetchingEVents ? <IsLoadingHtml /> : fetchedGames.length < 1 ? <EmptyRecordsDiv itemname = {key} /> : 
-                        fetchedGames.map((event, idx) => (
-                            <li className="block w-full py-1 px-2 bg-gray-200 mb-2 rounded">
-                                <span id="home-team" className="w-1/4 inline-block">
-                                    <img style={{width:"25px"}}
-                                    className={'inline-block'}
-                                    src={event?.home_team?.logo} /> {event?.home_team?.name}
-                                </span>
-                                <span className="rounded-2xl px-3 py-1  inline-block w-1/7 uppercase bg-gray-300 mx-4 font-bold">vs</span>
-                                <span id="away-team" className="w-1/4 inline-block">
-                                    <img style={{width:"25px"}}
-                                    className={'inline-block'}
-                                    src={event?.away_team?.logo} /> {event?.away_team?.name}
-                                </span>
-
-                                <span className="text-red-600 font-bold inline-block w-1/4">{(new Date(event?.start_date).toDateString())}</span>
-                                <button className="bg-red-600 py-1 px-3 text-white inline-block rounded-md font-normal" onClick={() => buyEventTicket(event)}>Buy Ticket</button>
-                            </li>
-                        ))
-                    }
-                </ul>
-        )
-    }
+    
     return (
         <>
-            <div className="font-bold my-4"><IoMdFootball className="inline-block"/> Football Matches</div>
+            <section className="py-5 pb-2">
+                <div className="container">
+                    <h1 className="text-blue-600 font-bold capitalize mb-4 text-center text-4xl ">Why Choose Us</h1>
 
-            <Tabs
-                id="events-selector"
-                activeKey={key}
-                onSelect={(k) => setKey(k)}
-                className="events-selector mb-3"
-                >
-                <Tab eventKey="latest_events" title="Latest Events">
-                    <EventsHtml />
-                </Tab>
-                <Tab eventKey="upcoming_events" title="Coming Events">
-                    <EventsHtml />                   
-                </Tab>
-                <Tab eventKey="pre_season" title="Pre-season">
-                    <EventsHtml />                   
-                </Tab>
-                <Tab eventKey="live_games" title="Live Games">
-                    <EventsHtml />                    
-                </Tab>
-                <Tab eventKey="fun_football" title="Fun Football">
-                    <EventsHtml />                 
-                </Tab>
-            </Tabs>
+                    <div>Experience the delight of having breakfast at your old house, and by evening, enjoying dinner with feet up at your new house, all without breaking a sweat!</div>
+                    
+                    <div className="flex-row flex my-5">
+                        <div className="flex-col nline-block w-1/3 pr-3">
+                            <div className="flex flex-row my-3">
+                                <div id="" className="flex flex-col mr-3">
+                                    <span className="rounded-full p-3 shadow-md">
+                                        <BiWorld  size={30}/>
+                                    </span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <h1 className="text-gray-600 font-bold">Global Know-how</h1>
+                                    <div className="mb-4">
+                                        Whether by air or sea, Mara movers ensures proper packing to international standards, handling and safe delivery to final destination.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-row my-3">
+                                <div id="" className="flex flex-col mr-3">
+                                    <span className="rounded-full p-3 shadow-md">
+                                        <FaHandshake  size={30}/>
+                                    </span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <h1 className="text-gray-600 font-bold">Experience</h1>
+                                    <div className="mb-4">
+                                        With over 10 years of experience in the relocation business and having done over 40,000 moves. We are well equipped to handle any relocation situation.                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex-col nline-block w-1/3 pr-3">
+                            <div className="flex flex-row my-2">
+                                <div id="" className="flex flex-col mr-3">
+                                    <span className="rounded-full p-3 shadow-md">
+                                        <FaUsers  size={30}/>
+                                    </span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <h1 className="text-gray-600 font-bold">Dedicated Teams</h1>
+                                    <div className="mb-4">
+                                    Mara movers is committed to helping our clients reach their goals, through personalized solutions for great experiences.                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-row my-3">
+                                <div id="" className="flex flex-col mr-3">
+                                    <span className="rounded-full p-3 shadow-md">
+                                        <FaRegLightbulb  size={30}/>
+                                    </span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <h1 className="text-gray-600 font-bold">Focus On Customer</h1>
+                                    <div className="">
+                                    Our strong sense of identification with client projects means that we are constantly striving to ensure 100% client satisfaction.                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div className="flex-col nline-block w-1/3 pr-3">
+                        
+                                <img src={WhyUs} className="flex flex-row rounded border border-gray-200 p-1"/>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
         </>
     )
 }

@@ -1,28 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../context/store";
 import makeRequest from "./utils/fetch-request";
-
-const SampleGames = [
-    {
-        home_team: "bournemouth",
-        away_team: "chelsea",
-        date: "24-1-2024",
-        competition: "premier league"
-    },
-    {
-        home_team: "tusker",
-        away_team: "shabana",
-        date: "24-1-2024",
-        competition: "premier league"
-    },
-    {
-        home_team: "ulinzi",
-        away_team: "nairobi",
-        date: "24-1-2024",
-        competition: "premier league"
-    },
-
-]
+import Messenger from '../assets/img/services/messenger.jpg'
+import Office from '../assets/img/services/house.jpg'
+import Courier from '../assets/img/services/pest.png'
 
 
 const FeaturedEvents = (props) => {
@@ -61,39 +42,53 @@ const FeaturedEvents = (props) => {
 
     
     return (
-        <section id='next-games' className={`bg-red-200 bg-${state?.followingclub ? state?.followingclub.bgColor : "red" }-200`}>
-                <div className='container py-5 capitalize'>
-                    {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
-                    {events?.map((event, idx) => (
-                        <div className='text-center w-1/3 inline-block p-3'>
-                            <div className='bg-white p-3 py-4 rounded shadow-md'>
-                                <div className='font-bold'>{(new Date(event?.start_date)).toDateString()}</div>
-                                <div className='capitalize text-gray-400'>{event.competition}</div>
-                                <div className='my-3'>
-                                        <div className='text-red-500 inline-block w-1/3'>
-                                            <img style={{width:"35px"}}
-                                            className={'mx-auto'}
-                                            src={event?.home_team?.logo}/>
-                                            {event.home_team?.logo}
-                                        </div>
-                                        <div className='bg-gray-200 rounded font-bold text-2xl inline-block w-1/3'>0 - 0</div>
-                                        <div className='text-red-500 inline-block w-1/3'>
-                                            <img style={{width:"35px"}}
-                                            className={'mx-auto'}
-                                            src={event?.away?.logo}/>
-                                            {event?.away_team?.name}
-                                        </div>
-                                        
-                                </div>
+        <section id='next-games' className="bg-gray-200 py-5">
+                <div className='container'>
+                    <h1 className="my-2 py-3 text-4xl text-blue-600 font-bold text-center">
+                        Our Services
+                    </h1>
 
-                                <button 
-                                    onClick={() => buyGameTicket(event)}
-                                    className={`bg-${state?.followingclub ? state?.followingclub.bg_color: "red"}-600 rounded-md text-white p-3 py-2 mt-4 w-full`}>
-                                    Buy Ticket
-                                    </button>
+                    <div className="py-3 my-2">
+                        Mara Movers takes the pressure out of your move and ensures the job gets done right. We are a reliable, trusted and competent moving services company here to help you shoulder the load of a residential or commercial move. Choosing the right moving company is the key to a smooth and successful move without complications or delays. That is what you get when you choose our moving services.
+                    </div>
+                </div>
+
+                <div className='container relative w-full'>                    
+                    <div className='w-1/3 pr-4 mt-2 inline-block'>
+                        <div className="border border-gray-400 p-3 shadow-sm text-center bg-gray-100 rounded">
+                            <div className="text-center">
+                                <img src={Messenger} alt="house-moving"  className="mx-auto rounded-full w-20"/>
+                            </div>
+                            <div className="text-2xl capitalize my-3 font-bold">Domestic and Inter-County Moving</div>
+                            <div className="py-2">
+                                Our house moves team handles everything from packing to final arrangement at your new house, we take the anxiety out of moving.
                             </div>
                         </div>
-                    ))}
+                    </div>
+
+                    <div className='w-1/3 pr-4 mt-2 inline-block'>
+                        <div className="border border-gray-400 p-3 shadow-sm text-center bg-gray-100 rounded">
+                            <div className="text-center">
+                                <img src={Office} alt="house-moving"  className="mx-auto rounded-full w-20"/>
+                            </div>
+                            <div className="text-2xl capitalize my-3 font-bold">Internal and Inter-county Office Moving</div>
+                            <div className="py-2">
+                                We provide high quality custom moving solutions at affordable prices. Call us or fill the free quote form to get a free estimate.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='w-1/3 pr-4 mt-2 inline-block'>
+                        <div className="border border-gray-400 p-3 shadow-sm text-center bg-gray-100 rounded">
+                            <div className="text-center">
+                                <img src={Courier} alt="house-moving"  className="mx-auto rounded-full w-20"/>
+                            </div>
+                            <div className="text-2xl capitalize my-3 font-bold">High-quality Professional Courier Services</div>
+                            <div className="py-2">
+                                A Courier service app by Mara Movers offering affordable, reliable and efficient parcel delivery within Nairobi.
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </section>

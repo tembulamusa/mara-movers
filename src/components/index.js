@@ -13,10 +13,11 @@ import Subscribe from './subscribe.js';
 import StartBlog from './start-blog.js';
 import Footer from './footer/index.js';
 import Jumbotron from './jumbotron.js';
-import Clubs from './clubs.js';
+import OurPromise from './our-promise.js';
 import { useContext } from 'react';
 import FeaturedEvents from './featured-events.js';
-
+import OurCUstomers from './our-customers.js';
+import GetQuote from './get-quote.js';
 
 
 const Index = (props) => {
@@ -28,39 +29,16 @@ const Index = (props) => {
             
             <Jumbotron />
 
-            {!state?.followingclub && <Clubs />}
+            <OurPromise />
 
             <FeaturedEvents />
-
-            <section id='matches' className='bg-white'>
-                <div className='container py-8'>
-                    <Events />
-                </div>
-            </section>
             
-            <hr className='container'/>
-            <section id='fkf-shop' className='bg-white'>
-                <div className='container py-8'>
-                    <Shop />
-                </div>
-            </section>
-
-            <section>
-                <AppDownload />
-            </section>
-
-            <section>
-                <News />
-            </section>
+            <Events /> {/* The why us section*/}
             
-            <section className='py-7 text-white text-center start-blog' id='start-blog'>
-                <StartBlog />
-            </section>
+            <OurCUstomers />
+            <GetQuote />
             
-            <section className='py-7 text-white text-center' id='subscribe'>
-                <Subscribe />
-                <Footer />
-            </section>
+            <Footer />
            
         </div>
     )
