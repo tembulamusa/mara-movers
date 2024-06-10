@@ -1,6 +1,6 @@
 {
-  "appId": "com.bikosports.android",
-  "appName": "Bikosports",
+  "appId": "com.maramoverssports.android",
+  "appName": "maramoverssports",
   "webDir": "build",
   "bundledWebRuntime": false,
   "plugins": {

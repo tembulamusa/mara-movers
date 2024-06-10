@@ -90,7 +90,7 @@ const ResetPassword = (props) => {
 
     const FormTitle = () => {
         return (
-            <div className='col-md-12 biko-bg p-2 text-center'>
+            <div className='col-md-12 maramovers-bg p-2 text-center'>
                 <h4 className="inline-blck">
                     RECOVER YOUR ACCOUNT
                 </h4>
@@ -197,7 +197,7 @@ const ResetPassword = (props) => {
                         <div className="form-group col-12 justify-content-center mt-3">
                                 <button type="submit"
                                         onClick={submitForm}
-                                        className='btn btn-lg  mt-5 biko-blue full-width'>
+                                        className='btn btn-lg  mt-5 maramovers-blue full-width'>
                                     Reset Password
                                 </button>
                         </div>

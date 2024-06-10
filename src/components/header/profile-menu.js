@@ -29,7 +29,7 @@ const ProfileMenu = (props) => {
                   <span style={{fontSize:"14px"}}>TZS {formatNumber(user.balance) || 0}</span>
                 </div>
                 <div className="col-3 d-n d-md-block">
-                    <Link to="/deposit" className="cg biko-blue  btn mobile-btn-sm" style={{width:"100%"}}>DEPOSIT</Link>
+                    <Link to="/deposit" className="cg maramovers-blue  btn mobile-btn-sm" style={{width:"100%"}}>DEPOSIT</Link>
                 </div>
                 
               </div>

@@ -13,9 +13,9 @@ import Vivo from '../assets/img/clients/vivo.png';
 const OurCUstomers = (props) => {
 
     return (
-        <section id="our-customers" className="py-5 bg-gray-200">
+        <section id="our-customers" className="py-3 md:py-5 bg-gray-200">
             <div className="container">
-                <h1 className="text-blue-600 font-bold capitalize mb-4 text-center text-4xl ">Our Customers</h1>
+                <h1 className="text-blue-600 font-bold capitalize mb-2 md:mb-4 text-center text-4xl ">Our Customers</h1>
                 <div className="text-center">Our esteemed corporate clients</div>
 
                 <div id="customers-ticker" className="mt-5">

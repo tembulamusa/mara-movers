@@ -47,14 +47,14 @@ const Events = (props) => {
     
     return (
         <>
-            <section className="py-5 pb-2">
+            <section className="py-3 md:py-5 pb-2">
                 <div className="container">
                     <h1 className="text-blue-600 font-bold capitalize mb-4 text-center text-4xl ">Why Choose Us</h1>
 
-                    <div>Experience the delight of having breakfast at your old house, and by evening, enjoying dinner with feet up at your new house, all without breaking a sweat!</div>
+                    <div className="text-center md:text-left">Experience the delight of having breakfast at your old house, and by evening, enjoying dinner with feet up at your new house, all without breaking a sweat!</div>
                     
-                    <div className="flex-row flex my-5">
-                        <div className="flex-col nline-block w-1/3 pr-3">
+                    <div className="flex-row block md:flex my-5">
+                        <div className="flex-col nline-block w-full md:w-1/3 pr-3">
                             <div className="flex flex-row my-3">
                                 <div id="" className="flex flex-col mr-3">
                                     <span className="rounded-full p-3 shadow-md">
@@ -83,7 +83,7 @@ const Events = (props) => {
                             </div>
                         </div>
 
-                        <div className="flex-col nline-block w-1/3 pr-3">
+                        <div className="flex-col nline-block w-full md:w-1/3 pr-3">
                             <div className="flex flex-row my-2">
                                 <div id="" className="flex flex-col mr-3">
                                     <span className="rounded-full p-3 shadow-md">
@@ -112,7 +112,7 @@ const Events = (props) => {
 
                         </div>
                         
-                        <div className="flex-col nline-block w-1/3 pr-3">
+                        <div className="flex-col nline-block w-full md:w-1/3 pr-3">
                         
                                 <img src={WhyUs} className="flex flex-row rounded border border-gray-200 p-1"/>
                             

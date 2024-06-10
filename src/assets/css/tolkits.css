@@ -16765,11 +16765,11 @@ li.left-menu-item-1 >.pro-inner-item {
     padding-right: 0 !important;
     margin-left: 1% !important;
 }
-.biko-bg {
+.maramovers-bg {
     background:#115078;
     color:#fff;
 }
-.biko-blue, .biko-blue:hover {
+.maramovers-blue, .maramovers-blue:hover {
    background:#34b3bf;
    color:#fff;
    line-height:30px;
@@ -16777,7 +16777,7 @@ li.left-menu-item-1 >.pro-inner-item {
    text-transform:uppercase;
 }
 
-.biko-pink-color, a.biko-pink-color, a.biko-pink-color:hover, .biko-pink-color:hover{
+.maramovers-pink-color, a.maramovers-pink-color, a.maramovers-pink-color:hover, .maramovers-pink-color:hover{
     color:#c6224e;
 }
 .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item {

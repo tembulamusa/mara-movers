@@ -149,7 +149,7 @@ const BodyLogin = (props) => {
                         </div>
                         
                         
-                        <button className={`btn btn-lg biko-blue mt-5 col-md-12 full-width`}
+                        <button className={`btn btn-lg maramovers-blue mt-5 col-md-12 full-width`}
                                     disabled={isLoading}>
                                 {isLoading ? <span>Logging In ...</span> : <span>Login</span>}
                                 </button>
@@ -167,7 +167,7 @@ const BodyLogin = (props) => {
                         <hr/>
                         <div className="small-box-content">
                             <a className="" href="/signup" title="Join now" onClick={() => gaEventTracker('Register')}>
-                                <span className="register-la">No Account? <span className="biko-pink-color">Register now!</span></span>
+                                <span className="register-la">No Account? <span className="maramovers-pink-color">Register now!</span></span>
                             </a>
                         </div>
                     </Row>

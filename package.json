@@ -1,5 +1,6 @@
 {
-  "name": "dimba-web",
+  "name": "mara-web",
+  "homepage": "http://maramovers.co.ke",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -79,7 +80,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js && sudo cp -rf build/* ../biko-web-react-live/ && sudo chown -R nginx ../biko-web-react-live",
+    "build": "node scripts/build.js",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "preinstall": "npx npm-force-resolutions"

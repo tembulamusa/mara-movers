@@ -1,8 +1,8 @@
 import {setLocalStorage, getFromLocalStorage} from './local-storage';
 
 const ENC_KEY = 'm1XR6ajgepqyh^7&21012G$%_q90)hte====';
-// const BASE_URL = 'https://dimba.co.ke';  
-const BASE_URL = "https://staging.dimbaplus.com/api/v1/";
+// const BASE_URL = 'https://mara.co.ke';  
+const BASE_URL = "https://staging.maraplus.com/api/v1/";
 
 const makeRequest = async ({url, method, data = null, use_jwt = false, is_basic_auth = false}) => {
 

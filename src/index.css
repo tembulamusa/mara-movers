@@ -103,3 +103,10 @@ code {
 #customers-ticker div {
   display: none;
 }
+
+
+@media only screen and (min-width: 780px) {
+  .md\:inline-block {
+    display: inline-block !important;
+  }
+}
