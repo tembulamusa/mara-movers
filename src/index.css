@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* for react gallery */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container {
+  max-width: 1200px;
+}
+
+#menu .item {
+  padding: 10px 10px;
+}
+
+#start-blog {
+  background: url('./assets/backgrounds/start-blog.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#subscribe {
+  background: url('./assets/backgrounds/subscribe.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#jumbotron {
+  background: url('./assets/backgrounds/inner-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-transluscent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu .item {
+  padding-top: 10px;
+}
+
+:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.modal-header .btn-close {
+  background: red;
+}
+
+.events-selector.nav-tabs .nav-item.show .nav-link, .events-selector.nav-tabs .nav-link.active {
+  border-color: transparent;
+  border-bottom: 2px solid blue;
+}
+
+.events-selector .nav-link {
+  padding-left: 0;
+  text-transform: capitalize;
+}
+
+.events-selector .nav-link:hover {
+  background: transparent;
+  border: transparent;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #a3a3a3;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#customers-ticker img {
+  margin-right: 10px;
+}
+
+#customers-ticker div {
+  display: none;
+}
+
+
+@media only screen and (min-width: 780px) {
+  .md\:inline-block {
+    display: inline-block !important;
+  }
+}
+
+
+.image-gallery-image {
+  background-color: rgb(147 51 234);
+}
+
+.image-gallery-thumbnails {
+  margin-top: 2px;
+  background-color: rgb(147 51 234);
+}
