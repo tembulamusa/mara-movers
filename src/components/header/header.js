@@ -50,7 +50,7 @@ const Header = (props) => {
                 <div className='container'>
                     <div className='py-2 pb-1 flex'>
                         <div className='w-60 flex-col'>
-                            <img src={Logo} className='md:w-40 inline-block'/> <div className='inline-block text-2xl font-bold pl-2 ml-2 border-l border-gray-400 text-purple-700 uppercase'>Ultimate Efficiency</div>
+                            <img src={Logo} className='md:w-40 inline-block'/> <div className='hidden md:inline-block text-2xl font-bold pl-2 ml-2 border-l border-gray-400 text-purple-700 uppercase'>Ultimate Efficiency</div>
                         </div>
                         <div className='w-40 flex-col text-align-right'>
                         <div className='float-end'>
