@@ -42,9 +42,9 @@ const FeaturedEvents = (props) => {
 
     
     return (
-        <section id='next-games' className="bg-gray-200 my-3 pb-3 md:py-5">
+        <section id='next-games' className="bg-gray-700 text-white my-3 pb-3 md:py-5">
                 <div className='container'>
-                    <h1 className="my-2 pb-1 py-3 md:py-3 text-4xl text-purple-600 font-bold text-center">
+                    <h1 className="my-2 pb-1 py-3 md:py-3 text-4xl font-bold text-center">
                         Our Services
                     </h1>
 
@@ -53,9 +53,9 @@ const FeaturedEvents = (props) => {
                     </div>
                 </div>
 
-                <div className='container relative w-full'>                    
+                <div className='container relative w-full text-gray-600'>                    
                     <div className='w-full md:w-1/3 pr-4 mt-2 inline-block'>
-                        <div className="border border-gray-400 p-3 shadow-sm text-center bg-gray-100 rounded">
+                        <div className="border border-gray-400 p-3 shadow-sm text-center bg-white rounded">
                             <div className="text-center">
                                 <img src={Messenger} alt="house-moving"  className="mx-auto rounded-full w-20"/>
                             </div>
@@ -67,7 +67,7 @@ const FeaturedEvents = (props) => {
                     </div>
 
                     <div className='w-full md:w-1/3 pr-4 mt-2 inline-block'>
-                        <div className="border border-gray-400 p-3 shadow-sm text-center bg-gray-100 rounded">
+                        <div className="border border-gray-400 p-3 shadow-sm text-center  bg-white rounded">
                             <div className="text-center">
                                 <img src={Office} alt="house-moving"  className="mx-auto rounded-full w-20"/>
                             </div>
@@ -79,7 +79,7 @@ const FeaturedEvents = (props) => {
                     </div>
 
                     <div className='w-full md:w-1/3 pr-4 mt-2 inline-block'>
-                        <div className="border border-gray-400 p-3 shadow-sm text-center bg-gray-100 rounded">
+                        <div className="border border-gray-400 p-3 shadow-sm text-center  bg-white rounded">
                             <div className="text-center">
                                 <img src={Courier} alt="house-moving"  className="mx-auto rounded-full w-20"/>
                             </div>

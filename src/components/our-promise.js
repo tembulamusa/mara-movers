@@ -9,14 +9,13 @@ const Teams = ["tusker", "ulinzi", "nairobi", "shabana","kenya_police", "posta",
 const OurPromise = (props) => {
     return (
         <>
-            <section className="py-4 mb-2">
+            <section className="py-4 pt-5 mb-2">
                 <div className="container">
-                    <h1 className="text-purple-600 font-bold capitalize mb-4 text-center text-4xl md:text-6xl ">Our Promise</h1>
+                    <h1 className="font-bold capitalize mb-2 text-center text-3xl md:text-6xl ">Our Promise</h1>
 
                     <div className="text-center md:text-left">
-                        <p className="mb-3">We know that moving is very personal experience that requires meticulous understanding of your needs. That’s why we developed The Mara Movers Way, a removals methodology built around this philosophy.</p>
 
-                        <p>Every move starts with a detailed assessment of your requirements and the nature of goods at hand. This informs the way we pack and handle each category of goods to ensure their integrity is maintained. Experience the delight of having breakfast at your old house, and by evening, enjoying dinner with feet up at your new house, all without breaking a sweat! We also offer secure and affordable warehousing and storage solutions.</p>
+                        {/* <p>Every move starts with a detailed assessment of your requirements and the nature of goods at hand. This informs the way we pack and handle each category of goods to ensure their integrity is maintained. Experience the delight of having breakfast at your old house, and by evening, enjoying dinner with feet up at your new house, all without breaking a sweat! We also offer secure and affordable warehousing and storage solutions.</p> */}
                     </div>
                 </div>
             </section>
@@ -27,7 +26,7 @@ const OurPromise = (props) => {
                             <div className="text-center"><FaHandshake size={40} className="text-purple-600 mx-auto"/></div>
                             <div className="text-2xl capitalize my-3 font-bold">Trusted Movers in Kenya</div>
                             <div className="py-2">
-                                With 10 years of experience, industry knowledge and lots of satisfied customers, we are the best moving company in Kenya!
+                                We know that moving is very personal experience that requires meticulous understanding of your needs
                             </div>
                         </div>
                     </div>

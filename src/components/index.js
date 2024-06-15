@@ -28,9 +28,11 @@ const Index = (props) => {
 
             <FeaturedEvents />
             
-            <Events /> {/* The why us section*/}
+            <section className='border-b border-gray-100 mb-4'>
+                <Events /> {/* The why us section*/}
+            </section>
             
-            <OurCUstomers />
+            {/* <OurCUstomers /> */}
             <GetQuote />
 
         </div>
