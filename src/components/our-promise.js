@@ -11,7 +11,7 @@ const OurPromise = (props) => {
         <>
             <section className="py-4 pt-5 mb-2">
                 <div className="container">
-                    <h1 className="font-bold capitalize mb-2 text-center text-3xl md:text-6xl ">Our Promise</h1>
+                    <h1 className="font-bold capitalize text-center text-3xl md:text-4xl ">Our Promise</h1>
 
                     <div className="text-center md:text-left">
 
@@ -19,7 +19,7 @@ const OurPromise = (props) => {
                     </div>
                 </div>
             </section>
-            <section className='bg-white my-3 mb-4' id='search-section h-1.5'>
+            <section className='bg-white my-2 !mb-4' id='search-section h-1.5'>
                 <div className='container relative w-full'>                    
                     <div className='w-full md:w-1/3 pr-4 mt-2 inline-block'>
                         <div className="border border-gray-200 p-3 shadow-sm text-center">
