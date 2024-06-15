@@ -38,13 +38,15 @@ code {
 }
 
 #jumbotron {
-  background: url('./assets/backgrounds/inner-banner.jpg');
+  background: url('./assets/backgrounds/inner-banner-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: center;
+  border-bottom: 1px solid #dddddd;
 }
 
 .bg-transluscent {
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
 }
 
 .menu .item {
@@ -121,4 +123,22 @@ code {
 .image-gallery-thumbnails {
   margin-top: 2px;
   background-color: rgb(147 51 234);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  left: 0%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  /* color: #fff; */
+  text-align: center;
+}
+
+label {
+  text-align: left !important;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: block;
 }

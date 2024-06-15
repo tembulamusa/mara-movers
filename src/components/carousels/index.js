@@ -17,21 +17,21 @@ function IndexCarousel() {
       <Carousel.Item>
         {/* <ExampleCarouselImage text="First slide" /> */}
         <img src={Pic1} alt=''/>
-        <Carousel.Caption className='bg-white rounded-md text-gray-500'>
+        <Carousel.Caption className='bg-white rounded-md text-gray-700'>
           <div className='text-3xl md:text-5xl py-3 font-bold leading-9'>Kenya’s <span className='text-orange-600'># 1 </span><br />Movers <span className="d-none md:inline-block"><br/></span>Website</div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         {/* <ExampleCarouselImage text="Second slide" /> */}
         <img src={Pic2} alt=''/>
-        <Carousel.Caption className='bg-white rounded-md text-gray-500'>
+        <Carousel.Caption className='bg-white rounded-md text-gray-700'>
           <div className='text-3xl md:text-5xl py-3 font-bold leading-9'>Best <span className='text-orange-600'>Rates </span><span className="d-none md:inline-block"><br/></span>In Town</div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         {/* <ExampleCarouselImage text="Third slide" /> */}
         <img src={Pic3} alt=''/>
-        <Carousel.Caption className='bg-white rounded-md text-gray-500'>
+        <Carousel.Caption className='bg-white rounded-md text-gray-700'>
           <div className='text-3xl md:text-5xl py-3 font-bold leading-9'>Extreme <br /><span className='text-orange-600'>Professionalism</span> <span className="d-none md:inline-block"><br/></span></div>
         </Carousel.Caption>
       </Carousel.Item>
