@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const PriceComputer = (props) => {
-    const [estPrice, setEstPrice] = useState(1);
+    const [estPrice, setEstPrice] = useState(18000);
+    const [quantity, setQuantity] = useState(1);
+    const [distMarker, setDistMarker] = useState(1);
+    
+    useEffect(() => {
+        let base = 18000;
+        let estimatedPrice = base * quantity * distMarker;
+        setEstPrice(estimatedPrice);
+    }, [quantity, distMarker]);
 
     return (
-        <div className="">
+        <div className="bg-white w-full px-3 py-3 rounded-md">
             <h1 className="text-2xl capitalize font-bold mb-3">Estimate price <span className="underline text-orange-600">{estPrice > 0 && <>Ksh. {estPrice}</>}</span></h1>
             <div className="row my-3">
                 <div className="col-6">
@@ -21,11 +29,10 @@ const PriceComputer = (props) => {
             {/* Size of the products */}
             <div className="">
             <label className="">How big is your house</label>
-            <select className="form-control">
-                <option value={""}>Select Size</option>
-                <option value={1.0}>Pickup</option>
-                <option value={1.2}>Canter</option>
-                <option value={1.2}>Container</option>
+            <select className="form-control" onChange={ev => setQuantity(ev.target.value)}>
+                <option value={0.8}>Pickup(1bedroom)</option>
+                <option value={1.0}>Canter(2 bedroom)</option>
+                <option value={1.5}>Container(5 bedroom)</option>
             </select>
             </div>
 

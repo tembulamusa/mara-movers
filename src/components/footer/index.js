@@ -18,8 +18,8 @@ import { FaPhoneAlt, FaWhatsapp, FaMapMarkerAlt, FaTwitter, FaInstagram } from "
 const Footer = (props) => {
 
     return (
-        <section className="mt-4 pt-3">
-            <section className='bg-gray-200 py-4'>
+        <section className="mt-4 text-white" style={{background: "#535357"}}>
+            <section className='py-4 text-white' style={{background: "#313133"}}>
                 <div className='container text-center md:text-left'>
                     <div className='w-full md:w-2/3 inline-block'>
                         <h1 className='font-bold capitalize text-2xl'>Get the best professional moving services in Kenya.</h1>
@@ -31,7 +31,7 @@ const Footer = (props) => {
                 </div>
             </section>
 
-            <section className='border-b border-gray-300' id='site-sumary'>
+            <section className='' id='site-sumary'>
                 <div className='container my-4 block text-center md:text-left md:flex flex-row'>
                     <div className='w-full md:w-3/12 flex-col pr-3 md:text-left border-b border-gray-300 mb-3 md:border-none md'>
                         <img src={Logo} className='w-60'/>
@@ -91,7 +91,7 @@ const Footer = (props) => {
                             <li className='leading-5 mb-2'>
                                 <CiMail size={30} className='w-20 mr-3 inline-block text-purple-500' />
                                 <div className='inline-block w-70'>
-                                    <div>Email: - maramoversk@gmail.com</div>
+                                    <div>Email: - info@maramovers.co.ke</div>
                                     <span></span>
                                     </div>
                             </li>
@@ -107,31 +107,32 @@ const Footer = (props) => {
                     </div>
                 </div>
             </section>
-            <div className="container text-left py-3">
-                <div className="inline-block uppercase w-full md:w-1/3">
+            <section className='' style={{background: "#313133"}}>
+                <div className="container text-left py-3">
+                    <div className="inline-block uppercase w-full md:w-1/3">
+                        
+                        <Link to={"/"} className='mr-3 opacity-70 hover:opacity-100'>Home</Link>
+                        <Link to={"/contact-us"} className='mr-3 opacity-70 hover:opacity-100'>Contact Us</Link>
+                        <Link to={"/about"} className='mr-3 opacity-70 hover:opacity-100'>About</Link>
+                        <Link to={"/services"} className='mr-3 opacity-70 hover:opacity-100'>Services</Link>
+                    </div>
+
+                    <div className="inline-block w-full pt-2 md:w-1/3 text-center">
+                        <Link to={"https://www.instagram.com/maramovers?igsh=YzljYTk1ODg3Zg=="} target='_blank' className='mr-2 opacity-70 hover:opacity-100 ' ><FaInstagram className='inline-block' size={30}/></Link>
+                        <Link to={"https://www.facebook.com/profile.php?id=100094662474097"} target="_blank" rel="noopener noreferrer" className='mr-2 opacity-70 hover:opacity-100 '><RiFacebookBoxLine className='inline-block' size={30}/></Link>
+                        <Link to={"/#"} className='mr-2 opacity-70 hover:opacity-100'><FaTwitter className='inline-block' size={30}/></Link>
+                    </div>
+
+                    <div className="pt-2 inline-block w-full md:w-1/3 opacity-80">
+                        &copy;2020 maramovers.co.ke <span className='opacity-60'>A RT Systems Site</span>
+                    </div>
                     
-                    <Link to={"/"} className='mr-3 opacity-70 hover:opacity-100'>Home</Link>
-                    <Link to={"/contact-us"} className='mr-3 opacity-70 hover:opacity-100'>Contact Us</Link>
-                    <Link to={"/about"} className='mr-3 opacity-70 hover:opacity-100'>About</Link>
-                    <Link to={"/services"} className='mr-3 opacity-70 hover:opacity-100'>Services</Link>
+                    <a className='fixed bottom-5 left-3 bg-green-500 text-white p-1 px-3 rounded-3xl text-xl' href={ `https://wa.me/254717506069?text=Hello%Maramovers.%20I%20would%20like%you%20to%20help.` } target="_blank">
+                        <FaWhatsapp size={25} className='mr-3 inline-block' />
+                        chat Now
+                    </a>
                 </div>
-
-                <div className="inline-block w-full pt-2 md:w-1/3 text-center">
-                    <Link to={"https://www.instagram.com/maramovers?igsh=YzljYTk1ODg3Zg=="} target='_blank' className='mr-2 opacity-70 hover:opacity-100 ' ><FaInstagram className='inline-block' size={30}/></Link>
-                    <Link to={"https://www.facebook.com/profile.php?id=100094662474097"} target="_blank" rel="noopener noreferrer" className='mr-2 opacity-70 hover:opacity-100 '><RiFacebookBoxLine className='inline-block' size={30}/></Link>
-                    <Link to={"/#"} className='mr-2 opacity-70 hover:opacity-100'><FaTwitter className='inline-block' size={30}/></Link>
-                </div>
-
-                <div className="pt-2 inline-block w-full md:w-1/3 opacity-80">
-                    &copy;2020 maramovers.co.ke <span className='opacity-60'>A RT Systems Site</span>
-                </div>
-                
-                <a className='fixed bottom-5 left-3 bg-green-500 text-white p-1 px-3 rounded-3xl text-xl' href={ `https://wa.me/254717506069?text=Hello%Maramovers.%20I%20would%20like%you%20to%20help.` } target="_blank">
-                    <FaWhatsapp size={25} className='mr-3 inline-block' />
-                    chat Now
-                </a>
-            </div>
-            
+            </section>
         </section>
     )
 }

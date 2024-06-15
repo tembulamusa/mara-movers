@@ -115,6 +115,13 @@ code {
   }
 }
 
+@media only screen and (max-width: 640px) {
+  
+  #jumbotron {
+    background: url('./assets/backgrounds/inner-banner.jpg') !important;
+  }
+}
+
 
 .image-gallery-image {
   background-color: rgb(147 51 234);
